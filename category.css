@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+<<<<<<< HEAD
     box-sizing: border-box;
 }
 html,body {
@@ -29,6 +30,23 @@ html,body {
   #navbar {
     height: 100px;
   }
+=======
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    
+}
+#navbar {
+    @media screen {
+        min-width: 1265px;;
+        
+    }
+    height: 90px;
+    background-color:whitesmoke;
+>>>>>>> cf04f1d (Fresh frontend push)
 }
 
 #logo {
@@ -36,6 +54,7 @@ html,body {
     color: purple;
     font-size: 40px;
     font-family: initial;
+<<<<<<< HEAD
 }
 @media (max-width: 576px) {
   #logo{
@@ -207,22 +226,189 @@ html,body {
     gap: 5%;
     width: 100%; 
     margin-left: 1%;
+=======
+    
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    margin-left: 20px; /* Add space between links and search button */
+}
+
+.search-button {
+    background-color: whitesmoke;
+    border: none;
+    color: purple;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search-button i {
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+ #navbar2 {
+    margin-left: 350px;
+    text-decoration: none;
+    color: black;
+    font-family: initial;
+    font-size: 17px; 
+}
+
+navbar2:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-family: initial;
+    font-size: 17px;
+
+}
+.menu-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: purple; /* Line color */
+  transition: width 0.4s ease-in-out;
+}
+
+.menu-link:hover::after {
+  width: 100%; /* Animate line left to right */
+}
+
+.First-link {
+    margin-left: 350px;
+}
+
+.menu-link:not(.first-link) {
+    margin-left: 30px;
+}
+.caret {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.dropdown li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #eee;
+}
+
+.dropdown-parent:hover .dropdown {
+    display: block;
+}
+
+.dropdown-parent:hover .caret {
+    transform: rotate(180deg);
+}
+
+.heading1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.main-container {
+    padding: 200px;
+    padding-top: 50px;
+  }
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+>>>>>>> cf04f1d (Fresh frontend push)
  }
 .product-card {
     background: #fff;
     border-radius: 12px;
+<<<<<<< HEAD
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
     overflow: hidden;
     transition: transform 0.3s ease;
     position:relative;
     will-change: transform;
     will-change: transform;
+=======
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+>>>>>>> cf04f1d (Fresh frontend push)
     }
 .product-card:hover {
     transform: translateY(-5px);
     }
 .product-card img {
     width: 100%;
+<<<<<<< HEAD
     height: 300px;
     object-fit: cover;
     }
@@ -282,11 +468,20 @@ html,body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+=======
+    height: 450px;
+    object-fit: cover;
+    }
+>>>>>>> cf04f1d (Fresh frontend push)
 .sale-badge {
     position: absolute;
     top: 12px;
     right: 12px;
+<<<<<<< HEAD
     background: #e53935;
+=======
+    background: #e85452;
+>>>>>>> cf04f1d (Fresh frontend push)
     color: white;
     font-size: 12px;
     padding: 4px 8px;
@@ -297,6 +492,7 @@ html,body {
     padding: 20px;
     }
 .product-title {
+<<<<<<< HEAD
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -335,6 +531,11 @@ html,body {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 5px;
+=======
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+>>>>>>> cf04f1d (Fresh frontend push)
     }
 .price-section {
     margin-bottom: 15px;

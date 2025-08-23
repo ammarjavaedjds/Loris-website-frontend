@@ -6,6 +6,7 @@
     margin-left: 100px;
     margin-top: 100px;
 }
+<<<<<<< HEAD
 html,body {
     margin: 0;
     padding: 0;
@@ -18,6 +19,8 @@ html,body {
     padding-top: 60px;
 }
 
+=======
+>>>>>>> cf04f1d (Fresh frontend push)
 .caret {
     display: inline-block;
     margin-left: 5px;
@@ -135,6 +138,115 @@ a{
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-family: initial;
+    font-size: 17px;
+
+}
+.menu-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: purple; /* Line color */
+  transition: width 0.4s ease-in-out;
+}
+
+.menu-link:hover::after {
+  width: 100%; /* Animate line left to right */
+}
+
+.First-link {
+    margin-left: 350px;
+}
+
+.menu-link:not(.first-link) {
+    margin-left: 30px;
+}
+
+.caret {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown  {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid white;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown li {
+    border-bottom: 1px solid white;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown a {
+    display: block;
+    padding: 13px;
+    color:purple;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dropdown a:hover {
+    background-color:white;
+}
+
+.dropdown-parent:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-parent:hover .caret {
+    transform: rotate(180deg);
+}
+
+
+>>>>>>> cf04f1d (Fresh frontend push)
 .heading1{
     margin-left: 100px;
     margin-top: 20px;
@@ -280,6 +392,31 @@ a{
     align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.search-form {
+    margin-left: 20px; /* Add space between links and search button */
+}
+
+.search-button {
+    background-color: whitesmoke;
+    border: none;
+    color: purple;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search-button i {
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+>>>>>>> cf04f1d (Fresh frontend push)
 .linkfotter{
     text-decoration: none;
     color: rgb(99, 54, 93);
@@ -306,6 +443,7 @@ a{
     margin: 0 10px;
     cursor: pointer;
   }
+<<<<<<< HEAD
 
 /* Navbar same hi rahe */
 #navbar {  
@@ -569,3 +707,6 @@ a{
     margin: 5px 0;
   }
 }
+=======
+  
+>>>>>>> cf04f1d (Fresh frontend push)
