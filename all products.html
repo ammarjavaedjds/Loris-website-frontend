@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All Products</title>
-<<<<<<< HEAD
   <link rel="stylesheet" href="style2.css">
-=======
-  <link rel="stylesheet" href="style.css">
->>>>>>> cf04f1d (Fresh frontend push)
   <link rel="stylesheet" href="cart.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="all" onload="this.onload=null;this.media='all';">
 </head>
 <body class="content" style="margin:0;">
 
-<<<<<<< HEAD
 <nav id="navbar">
+  <div class="delivery-banner">
+    <p>🚚 Free Delivery on Orders Above Rs. 2000 | Standard Delivery Charges Rs. 200</p>
+  </div>
   <div style="text-align: center;">
     <img src="image.jpeg" style="width: 50px; height: auto;" loading="lazy" alt="logo">
   </div>
@@ -45,34 +43,6 @@
     </ul>
   </li>
   <li><a href="contact.html" class="menu-link">Contact Us</a></li>
-=======
-<div class="nav-prod" style="background-color:whitesmoke;height:105px;text-align:center; position: sticky;top: 0;z-index: 1000;padding: 10px 20px;box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
-  <img src="image.jpeg" style="width:50px;height:auto;" loading="lazy" alt="Logo">
-  <h1 style="color:purple;font-size:40px;font-family:initial;margin:0;">Loris Health Care</h1>
-</div>
-        <div class="cart-icon" onclick="toggleCart()">
-         🛒<span id="cart-count">0</span>
-        </div>
-<br>
-
-<ul class="menu">
-  <a href="index.html" class="menu-link active" style="margin-left:340px;"><button style="width:115px;height:35px;font-size:20px;border-radius:8px;background:purple;color:white;">Home</button></a>
-  <a href="all products.html" class="menu-link" style="margin-left:20px;"><button style="width:115px;height:35px;font-size:19px;border-radius:8px;background:purple;color:white;">Products</button></a>
-  <li class="menu-item dropdown-parent">
-    <button style="width:115px;height:35px;font-size:17px;border-radius:8px;background:purple;color:white;margin-left:30px;">
-      Category <span class="caret"><i class="fa-solid fa-angle-up"></i></span>
-    </button>
-    <ul class="dropdown">
-      <li><a href="Deep Glow Skin Brightening.html">Skin Brightening</a></li>
-      <li><a href="Moisturizer.html">Moisturizer</a></li>
-      <li><a href="Glowris skin Brightening.html">Glowris Skin Brightening</a></li>
-      <li><a href="Acne solution.html">Acne Solution</a></li>
-      <li><a href="Sunblock scgel.html">SunBlock and SC Gel</a></li>
-      <li><a href="lordruf.html">Anti Dandruff</a></li>
-    </ul>
-  </li>
-  <a href="contact.html" class="menu-link" style="margin-left:30px;"><button style="width:115px;height:35px;font-size:17px;border-radius:8px;background:purple;color:white;">Contact Us</button></a>
->>>>>>> cf04f1d (Fresh frontend push)
 </ul>
 <div id="cart-panel" class="cart-panel">
     <h2>Your Cart</h2>
@@ -94,55 +64,55 @@
     <!-- Product Example -->
     <div class="product-card">
       <a href="deep glow cream2.html"><img src="deep glow creampic.jpg" alt="Deep Glow" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Deep Glow Brightening Cream</div>
         <div class="price-section">
           <span class="old-price">Rs.1,650.00</span>
-          <span class="new-price">Rs.1,403.00</span>
+          <span class="new-price">Rs.1,485.00</span>
         </div>
-        <button class="add-btn"onclick="addToCart('Deep Glow Brightening Cream', 1403)">Add to Cart</button>
+        <button class="add-btn"onclick="addToCart('Deep Glow Brightening Cream', 1485)">Add to Cart</button>
       </div>
     </div>
     <!-- Product 2 -->
     <div class="product-card">
       <a href="deep glow facewash2.html"><img src="deep glow facewash pic.jpg" alt="Image2" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Deep Glow Skin Brightening Facewash</div>
         <div class="price-section">
           <span class="old-price">Rs.945.00</span>
-          <span class="new-price">Rs.803.00</span>
+          <span class="new-price">Rs.850.00</span>
         </div>
-       <button class="add-btn"onclick="addToCart('Deep Glow Skin Brightening Facewash', 803)">Add to Cart</button>
+       <button class="add-btn"onclick="addToCart('Deep Glow Skin Brightening Facewash', 850)">Add to Cart</button>
       </div>
     </div>
 
     <!-- Product 3 -->
     <div class="product-card">
       <a href="sunprime2.html"><img src="sun creme.jpg" alt="Image3" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Sun Prime SC Gel + Primer (SPF 40)</div>
         <div class="price-section">
           <span class="old-price">Rs.1,945.00</span>
-          <span class="new-price">Rs.1,653.00</span>
+          <span class="new-price">Rs.1,750.00</span>
         </div>
-        <button class="add-btn"onclick="addToCart('Sun Prime SC Gel + Primer (SPF 40)', 1653)">Add to Cart</button>
+        <button class="add-btn"onclick="addToCart('Sun Prime SC Gel + Primer (SPF 40)', 1750)">Add to Cart</button>
       </div>
     </div>
 
     <!-- Product 4 -->
     <div class="product-card">
       <a href="lormoist skin barier2.html"><img src="lormoist.jpg" alt="Image4" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Lormoist Skin Barrier Lotion (SPF 20)</div>
         <div class="price-section">
           <span class="old-price">Rs.850.00</span>
-          <span class="new-price">Rs.723.00</span>
+          <span class="new-price">Rs.765.00</span>
         </div>
-        <button class="add-btn"onclick="addToCart('Lormoist Skin Barrier Lotion (SPF 20)', 723)">Add to Cart</button>
+        <button class="add-btn"onclick="addToCart('Lormoist Skin Barrier Lotion (SPF 20)', 765)">Add to Cart</button>
       </div>
     </div>
 
@@ -183,28 +153,28 @@
     <!-- Product 7 -->
     <div class="product-card">
       <a href="aclor acne fasewash2.html"><img src="aclor.jpg" alt="Image7" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Aclor Anti Acne Facewash Gel </div>
         <div class="price-section">
           <span class="old-price">Rs.795.00</span>
-          <span class="new-price">Rs.675.50</span>
+          <span class="new-price">Rs.715.00</span>
         </div>
-        <button class="add-btn"onclick="addToCart('Aclor Anti Acne Facewash Gel ', 675)">Add to Cart</button>
+        <button class="add-btn"onclick="addToCart('Aclor Anti Acne Facewash Gel ', 715)">Add to Cart</button>
       </div>
     </div>
 
     <!-- Product 8 -->
     <div class="product-card">
       <a href="Aclor acne soap2.html"><img src="saop.jpeg" alt="Image8" loading="lazy"></a>
-      <div class="sale-badge">Sale 15%</div>
+      <div class="sale-badge">Sale 10%</div>
       <div class="product-info">
         <div class="product-title">Aclor Anti Acne and Oily Saop </div>
         <div class="price-section">
           <span class="old-price">Rs.280.00</span>
-          <span class="new-price">Rs.238.50</span>
+          <span class="new-price">Rs.252.50</span>
         </div>
-        <button class="add-btn"onclick="addToCart('Aclor Anti Acne and Oily Saop', 238)">Add to Cart</button>
+        <button class="add-btn"onclick="addToCart('Aclor Anti Acne and Oily Saop', 252)">Add to Cart</button>
       </div>
     </div>
 
@@ -216,28 +186,28 @@
   <!-- Product 9 -->
   <div class="product-card">
     <a href="shadowy sunblock2.html"><img src="sun ccreme.jpeg" alt="Image9" loading="lazy"></a>
-    <div class="sale-badge">Sale 15%</div>
+    <div class="sale-badge">Sale 10%</div>
     <div class="product-info">
       <div class="product-title">Shadowy Spectrum Sunblock (SPF 60+)</div>
       <div class="price-section">
         <span class="old-price">Rs.750.00</span>
-        <span class="new-price">Rs.638.50</span>
+        <span class="new-price">Rs.675.50</span>
       </div>
-      <button class="add-btn"onclick="addToCart('Shadowy Spectrum Sunblock (SPF 60+)', 638)">Add to Cart</button>
+      <button class="add-btn"onclick="addToCart('Shadowy Spectrum Sunblock (SPF 60+)', 675)">Add to Cart</button>
     </div>
   </div>
 
   <!-- Product 10 -->
   <div class="product-card">
     <a href="lordruf anti dandruff shampoo2.html"><img src="lordruf pic.jpg" alt="Image10" loading="lazy"></a>
-    <div class="sale-badge">Sale 15%</div>
+    <div class="sale-badge">Sale 10%</div>
     <div class="product-info">
       <div class="product-title">Lordruf Anti Dandruff Shampoo</div>
       <div class="price-section">
         <span class="old-price">Rs.750.00</span>
-        <span class="new-price">Rs.638.00</span>
+        <span class="new-price">Rs.675.00</span>
       </div>
-      <button class="add-btn"onclick="addToCart('Lordruf Anti Dandruff Shampoo', 638)">Add to Cart</button>
+      <button class="add-btn"onclick="addToCart('Lordruf Anti Dandruff Shampoo', 675)">Add to Cart</button>
     </div>
   </div>
 
@@ -278,25 +248,10 @@
         </ul>
       </div>
       <div>
-<<<<<<< HEAD
         <h4>CONTACT INFO</h4>
         <ul>
           <li>📍 Lahore, Pakistan</li>
           <li>📞 +92 321 4066188</li>
-=======
-        <h4>USER INFO</h4>
-              <ul>
-                <li><a href="Privacy policy.html" class="linkfotter">Privacy Policy</a></li>
-                <li><a href="refund policy.html" class="linkfotter">Refund Policy</a></li>
-                <li><a href="shipping policy.html" class="linkfotter">Shipping Policy</a></li>
-              </ul>
-      </div>
-      <div>
-        <h4>CONTACT INFO</h4>
-        <ul>
-          <li>📍 Lahore, Pakistan</li>
-          <li>📞 +92 333 1371383</li>
->>>>>>> cf04f1d (Fresh frontend push)
           <li>✉️ lorishaelthcare7@gmail.com</li>
         </ul>
       </div>
@@ -304,11 +259,7 @@
   </div>
 
   <div class="social-icons">
-<<<<<<< HEAD
     <a href="https://api.whatsapp.com/send?phone=923214066188&text=Hello" target="_blank"><img src="wattsup.png" alt="WhatsApp" style="width:42px;" loading="lazy"></a>
-=======
-    <a href="https://wa.me/923148681218" target="_blank"><img src="wattsup.png" alt="WhatsApp" style="width:42px;" loading="lazy"></a>
->>>>>>> cf04f1d (Fresh frontend push)
     <a href="https://www.facebook.com/profile.php?id=100083237227267"><img src="facebook logo.png" alt="Facebook" style="width:42px;" loading="lazy"></a>
     <a href="https://www.instagram.com/loris_healthcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="insta logo.png" alt="Instagram" style="width:37px;" loading="lazy"></a>
   </div>

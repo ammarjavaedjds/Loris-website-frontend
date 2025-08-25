@@ -12,37 +12,71 @@ html,body {
     justify-content: center;
     gap: 20px;
     overflow-x: hidden; /* horizontal scroll ko disable karega */
-<<<<<<< HEAD
     padding-top: 60px;
 }
+.delivery-banner {
+  position: fixed;   /* hamesha top par chipka rahega */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width screen k */
+  background: rgb(106, 2, 106);  /* black background */
+  color: #fff;       /* white text */
+  padding: 8px 0;
+  overflow: hidden;
+  z-index: 9999;     /* sab cheezon se upar rahe */
+}
+
+.delivery-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-text 15s linear infinite;
+  font-size: 12px;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .delivery-banner p {
+    font-size: 13px;
+    animation-duration: 18s; /* thoda slow for readability */
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+  .delivery-banner {
+    padding: 6px 0;
+  }
+  .delivery-banner p {
+    font-size: 12px;
+    animation-duration: 20s; /* aur slow so text clearly dikhai de */
+  }
+}
+
 /* Navbar same hi rahe */
 #navbar {  
   position: fixed;
-=======
-}
-
-
-
- 
-/* Navbar same hi rahe */
-#navbar {  
-  position: sticky;
->>>>>>> cf04f1d (Fresh frontend push)
   height: 105px;
   background-color: whitesmoke;
   top: 0;
   z-index: 1000;
   padding: 10px 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-<<<<<<< HEAD
   width: 100%;
+  margin-top: 30px;  
 }
 @media (max-width: 576px) {
   #navbar {
     height: 100px;
   }
-=======
->>>>>>> cf04f1d (Fresh frontend push)
 }
 
 #logo {
@@ -51,7 +85,6 @@ html,body {
     font-size: 40px;
     font-family: initial;
 }
-<<<<<<< HEAD
 @media (max-width: 576px) {
   #logo{
     font-size: 30px;
@@ -68,6 +101,7 @@ html,body {
   gap: 30px;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 
 /* Menu link style */
@@ -127,7 +161,7 @@ html,body {
 @media (max-width: 768px) {
   .menu {
     flex-direction: row;
-    gap: 20px;
+    gap: 12px;
   }
   .menu-link {
     width: 90px;
@@ -204,132 +238,6 @@ html,body {
 
 .dropdown-parent:hover .caret {
   transform: rotate(180deg);
-=======
-
-/* Menu */
-.menu {
-    list-style: none;
-    padding: 0;
-    margin-top: 18px;
-    display: flex;
-    justify-content: center; /* center me align */
-    align-items: center;
-    gap: 20px; /* margin-left ki jagah gap use karo */
-}
-
-/* Buttons ko style do (inline hataya) */
-.menu button {
-    width: 115px;
-    height: 35px;
-    border-radius: 8px;
-    background: purple;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: row; /* vertical list */
-    gap: 0px;
-    height: 30px;
-    font-size:15px ;
-  }
-}
-@media (max-width: 768px) {
-  .menu-link button {
-    margin-left: 8px;  /* left side se gap kam */
-    width: 97px;        /* yahan width chhoti kar di */
-    height: 30px;
-  }
-}
-
-.menu-item {
-    position:relative;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-family: initial;
-    font-size: 17px;
-
-}
-.menu-link {
-  position:relative;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: purple; /* Line color */
-  transition: width 0.4s ease-in-out;
-}
-
-.menu-link:hover::after {
-  width: 100%; /* Animate line left to right */
-}
-
-.caret {
-    display: inline-block;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease;
-}
-
-.dropdown li {
-    border-bottom: 1px solid #ddd;
-}
-
-.dropdown li:last-child {
-    border-bottom: none;
-}
-
-.dropdown a {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown a:hover {
-    background-color: #eee;
-}
-
-.dropdown-parent:hover .dropdown {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown-parent:hover .caret {
-    transform: rotate(180deg);
->>>>>>> cf04f1d (Fresh frontend push)
 }
 .fixed-banner img{
     width: 100%;
@@ -380,7 +288,6 @@ html,body {
 
 .skin{
     margin-left: 575px;
-<<<<<<< HEAD
     margin-top: 5%;
     width: 10%;
     height:40px;
@@ -413,28 +320,6 @@ html,body {
     gap: 5%;
     width: 100%; 
     margin-left: 1%;
-=======
-    margin-top: 15px;
-    width: 110px;
-    height: 35px;
-    border-radius: 8px;
-    background-color:rgb(99, 54, 93);
-}
-
-.Category{
-
-    text-align: center;
-    margin-top: 80px;
-    font-size: 40px;
-}
-.main-container {
-    padding: 60px;
-  }
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
->>>>>>> cf04f1d (Fresh frontend push)
  }
 .product-card {
     background: #fff;
@@ -442,11 +327,7 @@ html,body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
     overflow: hidden;
     transition: transform 0.3s ease;
-<<<<<<< HEAD
     position:relative;
-=======
-    position: relative;
->>>>>>> cf04f1d (Fresh frontend push)
     will-change: transform;
     will-change: transform;
     }
@@ -472,7 +353,6 @@ html,body {
 /* -------------------- Media Queries -------------------- */
 
 /* Mobile Devices */
-<<<<<<< HEAD
 @media (max-width: 576px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr); /* Mobile = 2 per row */
@@ -483,28 +363,6 @@ html,body {
 }
 
 
-=======
-@media screen and (max-width: 480px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 10px;
-    }
-
-    .product-card img {
-        height: 200px;
-    }
-
-    .product-card h3 {
-        font-size: 1rem;
-    }
-
-    .product-card p {
-        font-size: 0.9rem;
-    }
-}
-
->>>>>>> cf04f1d (Fresh frontend push)
 /* Tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .products-grid {
@@ -532,11 +390,7 @@ html,body {
 /* Large Screens (Desktop) */
 @media screen and (min-width: 1025px) {
     .products-grid {
-<<<<<<< HEAD
         grid-template-columns: repeat(3, 1fr);
-=======
-        grid-template-columns: repeat(4, 1fr);
->>>>>>> cf04f1d (Fresh frontend push)
     }
 }
 .sale-badge {
@@ -554,44 +408,11 @@ html,body {
     padding: 20px;
     }
 .product-title {
-<<<<<<< HEAD
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-=======
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    }
-.price-section {
-    margin-bottom: 15px;
-    }
-.old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 14px;
-    }
-.new-price {
-    color: #e91e63;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 10px;
-    }
-.add-btn {
-    width: 100%;
-    padding: 10px;
-    background:purple;
-    color: #fafafa;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.4s ease;
-    }
-.add-btn:hover {
-    background: rgb(89, 31, 89);
->>>>>>> cf04f1d (Fresh frontend push)
     }
 .product-card2 {
     width: 250px;
@@ -616,23 +437,7 @@ html,body {
     height: auto;
     display: block;
     }
-<<<<<<< HEAD
     
-=======
-  
-.sale-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #e53935;
-    color: white;
-    padding: 4px 8px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 3px;
-    }
-  
->>>>>>> cf04f1d (Fresh frontend push)
 .product-info2 {
     padding: 15px;
     }
@@ -642,40 +447,6 @@ html,body {
     font-size: 16px;
     margin-bottom: 5px;
     }
-<<<<<<< HEAD
-
-=======
-  
-.product-price {
-    margin: 8px 0;
-    }
-  
-.old-price2 {
-    text-decoration: line-through;
-    color: #999;
-    margin-right: 8px;
-    }
-  
-.new-price2 {
-    color: #e91e63;
-    font-weight: bold;
-    }
-  
-.add-to-cart {
-    width: 100%;
-    background:purple;
-    color: #333;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border-top: 1px solid #eee;
-    }
-  
-.add-to-cart:hover {
-    background: rgb(89, 31, 89);
-    }
->>>>>>> cf04f1d (Fresh frontend push)
 /* Responsive padding */
 @media (max-width: 600px) {
     .navbar {
@@ -692,36 +463,6 @@ html,body {
     align-items: center;
 }
 
-<<<<<<< HEAD
-=======
-.banner-slider {
-  width: 100%;
-  height: 00px;
-  max-height: 400px; /* Ya jitni height aap chahen */
-  overflow: hidden;
-  position: relative;
-}
-
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 🔁 Image crop ho ke full cover karegi */
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.banner-image.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-
-
-
->>>>>>> cf04f1d (Fresh frontend push)
 .container{
     display:flex; /* Flexbox layout to align child divs side by side */
     justify-content: space-between;
@@ -1026,10 +767,7 @@ html,body {
     align-items:center;
     margin-top: 10px;
     margin-left: 0px;
-<<<<<<< HEAD
     
-=======
->>>>>>> cf04f1d (Fresh frontend push)
   }
 
   #navbar2 {
@@ -1160,6 +898,10 @@ html,body {
     margin-top: 10px;
     gap: 30px;
 
+  }
+  .box10{
+    width: 31%;
+    height: 280px;
   }
 }
 @media screen and (max-width: 768px){

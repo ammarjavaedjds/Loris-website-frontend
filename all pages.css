@@ -1,24 +1,64 @@
 *{
     padding: 0%;
     margin: 0%;
-<<<<<<< HEAD
     box-sizing: border-box;
 }
 html,body {
-=======
-}
-body {
->>>>>>> cf04f1d (Fresh frontend push)
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: white;
-<<<<<<< HEAD
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     overflow-x: hidden; /* horizontal scroll ko disable karega */
     padding-top: 60px;
+}
+.delivery-banner {
+  position: fixed;   /* hamesha top par chipka rahega */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width screen k */
+  background: rgb(106, 2, 106);  /* black background */
+  color: #fff;       /* white text */
+  padding: 8px 0;
+  overflow: hidden;
+  z-index: 9999;     /* sab cheezon se upar rahe */
+}
+
+.delivery-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-text 15s linear infinite;
+  font-size: 12px;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .delivery-banner p {
+    font-size: 13px;
+    animation-duration: 18s; /* thoda slow for readability */
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+  .delivery-banner {
+    padding: 6px 0;
+  }
+  .delivery-banner p {
+    font-size: 12px;
+    animation-duration: 20s; /* aur slow so text clearly dikhai de */
+  }
 }
 
 /* Navbar same hi rahe */
@@ -31,6 +71,7 @@ body {
   padding: 10px 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   width: 100%;
+  margin-top: 30px;
 }
 @media (max-width: 576px) {
   #navbar {
@@ -39,39 +80,10 @@ body {
 }
 
  #logo {
-=======
-    
-}
-
-
-/* .fade-in {
-    opacity: 0; /* Initially invisible */
-    /* animation: fadeIn 1s ease-in forwards 1s; Delay of 2 seconds before fade-in */
-/* } */
-
-/* @keyframes fadeIn { */
-    /* to {
-        opacity: 1; Final state: fully visible */
-    /* }
-} */ */
-
-
-#nav {
-    @media screen {
-        min-width: 600px;
-        
-    }
-    height: 10px;
-    background-color: whitesmoke;
-}
-
-#logo {
->>>>>>> cf04f1d (Fresh frontend push)
     text-align: center;
     color: purple;
     font-size: 40px;
     font-family: initial;
-<<<<<<< HEAD
 }
 @media (max-width: 576px) {
   #logo{
@@ -89,6 +101,7 @@ body {
   gap: 30px;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 
 /* Menu link style */
@@ -148,7 +161,7 @@ body {
 @media (max-width: 768px) {
   .menu {
     flex-direction: row;
-    gap: 20px;
+    gap: 12px;
   }
   .menu-link {
     width: 90px;
@@ -284,137 +297,6 @@ body {
     margin: 5px;
   }
 }
-=======
-    
-}
- #navbar2 {
-    margin-left: 350px;
-    text-decoration: none;
-    color: black;
-    font-family: initial;
-    font-size: 17px; 
-}
-
-navbar2:hover{
-    text-decoration: underline;
-    color: white;
-
-}
-
-
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin-top: 18px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.menu-item {
-    position: relative;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-family: initial;
-    font-size: 17px;
-
-}
-
-.First-link {
-    margin-left: 350px;
-}
-
-.menu-link:not(.first-link) {
-    margin-left: 30px;
-}
-.menu-link:hover {
-    text-decoration: underline;
-    color: white;
-}
-
-
-
-.caret {
-    display: inline-block;
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    width: 200px;
-}
-
-.dropdown li {
-    border-bottom: 1px solid #ddd;
-}
-
-.dropdown li:last-child {
-    border-bottom: none;
-}
-
-.dropdown a {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown a:hover {
-    background-color: #eee;
-}
-
-.dropdown-parent:hover .dropdown {
-    display: block;
-}
-
-.dropdown-parent:hover .caret {
-    transform: rotate(180deg);
-}
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.search-form {
-    margin-left: 20px; /* Add space between links and search button */
-}
-
-.search-button {
-    background-color: whitesmoke;
-    border: none;
-    color: purple;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.search-button i {
-    font-size: 18px;
-}
-
-.search-button:hover {
-    background-color: #45a049;
-}
-
-
->>>>>>> cf04f1d (Fresh frontend push)
 .container {
     display: flex;
     align-items: center;

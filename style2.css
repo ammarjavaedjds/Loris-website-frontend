@@ -14,10 +14,53 @@ html,body {
     overflow-x: hidden; /* horizontal scroll ko disable karega */
     padding-top: 60px;
 }
+ .delivery-banner {
+  position: fixed;   /* hamesha top par chipka rahega */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width screen k */
+  background: rgb(106, 2, 106);  /* black background */
+  color: #fff;       /* white text */
+  padding: 8px 0;
+  overflow: hidden;
+  z-index: 9999;     /* sab cheezon se upar rahe */
+}
 
+.delivery-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-text 15s linear infinite;
+  font-size: 12px;
+}
 
+@keyframes scroll-text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .delivery-banner p {
+    font-size: 13px;
+    animation-duration: 18s; /* thoda slow for readability */
+  }
+}
 
- 
+/* Mobile Screens */
+@media (max-width: 576px) {
+  .delivery-banner {
+    padding: 6px 0;
+  }
+  .delivery-banner p {
+    font-size: 12px;
+    animation-duration: 20s; /* aur slow so text clearly dikhai de */
+  }
+}
+
 /* Navbar same hi rahe */
 #navbar {  
   position: fixed;
@@ -28,6 +71,7 @@ html,body {
   padding: 10px 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   width: 100%;
+  margin-top: 30px;
 }
 
 #logo {
@@ -35,6 +79,12 @@ html,body {
     color: purple;
     font-size: 40px;
     font-family: initial;
+}
+@media (max-width: 576px) {
+  #logo{
+    font-size: 30px;
+    font-family:initial ;
+  }
 }
 
 /* Basic menu style */
@@ -46,6 +96,7 @@ html,body {
   gap: 30px;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 
 /* Menu link style */
@@ -105,7 +156,7 @@ html,body {
 @media (max-width: 768px) {
   .menu {
     flex-direction: row;
-    gap: 20px;
+    gap: 12px;
   }
   .menu-link {
     width: 90px;
@@ -291,7 +342,7 @@ html,body {
 @media (max-width: 576px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr); /* Mobile = 2 per row */
-    margin-left: -6%;
+    margin-left: -8%;
     gap: 3%;
     width: 420px;
   }
